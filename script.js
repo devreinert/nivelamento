@@ -14,7 +14,7 @@ document.getElementById("frmCadastro").addEventListener("submit", function (e) {
     const erro = document.getElementById("erro");
 
     // dando valores as minhas variaveis para compara-las aos valor colocados no input
-    const usuarioCorreto = "admin";
+    const usuarioCorreto = "Guilherme";
     const senhaCorreta = "1234";
 
     if (usuario === usuarioCorreto && senha === senhaCorreta) {

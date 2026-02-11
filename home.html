@@ -34,16 +34,13 @@
         max-width: 100%;
         display: block;
         border-radius: 20px;
-
     }
 
     .grid1 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         max-width: 1000px;
         grid-gap: 30px;
-
-
     }
 
     .grid1>div:nth-child(n + 0) {
@@ -82,10 +79,54 @@
         border-radius: 12px;
         border: 1px solid #ccc;
         padding: 12px;
-
     }
 
     a {
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .sair {
+        text-decoration: none;
+        position: absolute;
+        top: 0px;
+        right: 65px;
+        font-size: 15px;
+    }
+
+    .sobre {
+        text-decoration: none;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        font-size: 15px;
+    }
+
+    .card-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 120px;
+        object-fit: contain;
+        /* mantém proporção sem distorcer */
+    }
+
+    .grid-item {
+        padding: 20px;
+        background: white;
+        border-radius: 20px;
+        transition: 0.2s ease;
+
+    }
+
+    .container-link a {
         text-decoration: none;
         position: absolute;
         top: 10px;
@@ -95,26 +136,33 @@
 </style>
 
 <body>
+    <a class="sair" href="tela-login.html">Sair</a>
+    <a class="sobre" href="sobre.html">Sobre</a>
 
-    <a href="sobre.html">Sobre</a>
     <h1>Bem-vindo Guilherme!</h1>
 
-    <section class="grid1" data-bs-toggle="modal" data-bs-target="#meuModal4">
-        <div class="grid-item">
+    <section class="grid1">
+        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#meuModal4">
             <img src="imgs/Img2.png" alt="">
-            <p></p>
+            <p>Ansiedade</p>
         </div>
         <div class="grid-item" data-bs-toggle="modal" data-bs-target="#meuModal3">
             <img src="imgs/Img3.png" alt="">
-            <p></p>
+            <p>Preocupações</p>
         </div>
         <div class="grid-item" data-bs-toggle="modal" data-bs-target="#meuModal2">
             <img src="imgs/Img4.png" alt="">
-            <p></p>
+            <p>Bem-estar</p>
         </div>
         <div class="grid-item" data-bs-toggle="modal" data-bs-target="#meuModal">
             <img src="imgs/Img6.png" alt="">
-            <p></p>
+            <p>Desabafe</p>
+        </div>
+        <div class="grid-item">
+            <a href="donation.html" class="card-link">
+                <img class="donation" src="imgs/Donation.png" alt="">
+                <p>Doação</p>
+            </a>
         </div>
     </section>
 
@@ -126,7 +174,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <form name="formulario" id="modelDesabafo" onsubmit="return validaDesabafo()">
+                    <form name="formulario" id="modelDesabafo">
                         <input type="text" id="tituloFrm" name="tituloFrm" placeholder="Titulo do desabafo" required>
                         <textarea id="desabafo" name="desabafo" placeholder="Me conta o que te aflinge!"
                             required></textarea>
