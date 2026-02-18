@@ -1,6 +1,6 @@
 // document = é a pagina html
 // getElementById = pega o id que esta entre os ()
-// addEventListener(submit) = é o gatilho
+// addEventListener("submit": Quando acontecer o evento submit nesse formulário, execute essa função.
 // function(e) = cria a função que vai rodar a logica
 // e = contem as informações  
 document.getElementById("frmCadastro").addEventListener("submit", function (e) {

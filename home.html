@@ -38,7 +38,7 @@
 
     .grid1 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 1000px;
         grid-gap: 30px;
     }
@@ -90,22 +90,6 @@
         text-align: center;
     }
 
-    .sair {
-        text-decoration: none;
-        position: absolute;
-        top: 0px;
-        right: 65px;
-        font-size: 15px;
-    }
-
-    .sobre {
-        text-decoration: none;
-        position: absolute;
-        top: 0px;
-        right: 20px;
-        font-size: 15px;
-    }
-
     .card-link {
         text-decoration: none;
         color: inherit;
@@ -133,11 +117,39 @@
         right: 20px;
         font-size: 15px;
     }
+
+    .menu {
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        display: flex;
+        gap: 15px;
+        list-style: none;
+
+
+    }
+
+    .modal-body {
+        text-align: center;
+    }
+
+    .botao-modal {
+        width: 100px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
 </style>
 
 <body>
-    <a class="sair" href="tela-login.html">Sair</a>
-    <a class="sobre" href="sobre.html">Sobre</a>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="desabafo.html">Desabafe</a></li>
+            <li><a class="sobre" href="doacao.html">Doação</a></li>
+            <li><a class="sobre" href="sobre.html">Sobre</a></li>
+            <li><a class="sair" href="tela-login.html">Sair</a></li>
+        </ul>
+    </nav>
 
     <h1>Bem-vindo Guilherme!</h1>
 
@@ -154,16 +166,7 @@
             <img src="imgs/Img4.png" alt="">
             <p>Bem-estar</p>
         </div>
-        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#meuModal">
-            <img src="imgs/Img6.png" alt="">
-            <p>Desabafe</p>
-        </div>
-        <div class="grid-item">
-            <a href="donation.html" class="card-link">
-                <img class="donation" src="imgs/Donation.png" alt="">
-                <p>Doação</p>
-            </a>
-        </div>
+
     </section>
 
     <div class="modal fade" id="meuModal" tabindex="-1">
@@ -200,6 +203,10 @@
                         englobando equilíbrio social, financeiro e mental. Envolve hábitos saudáveis, como alimentação,
                         sono, exercícios, bons relacionamentos e lazer. Sinônimos incluem qualidade de vida, plenitude,
                         satisfação, conforto, saúde, harmonia, Felicidade, vigor e tranquilidade.</p>
+
+                    <a href="https://bvsms.saude.gov.br/qualidade-de-vida-em-cinco-passos/">Qualidade de vida em 5 passos!</a>
+                </div>
+                <div class="botao-modal">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
                 </div>
                 <div class="modal-footer">
@@ -221,6 +228,9 @@
                         problemas em solucionáveis e incontroláveis, agindo apenas sobre o que pode mudar. Estabeleça um
                         horário específico para pensar nos problemas e cultive hobbies que tragam relaxamento, buscando
                         apoio profissional se a ansiedade persistir.</p>
+                    <a href="https://www.youtube.com/watch?v=Z1y3Alas8Zs">Clique aqui para aliviar suas preucupações!</a>
+                </div>
+                <div class="botao-modal">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
                 </div>
                 <div class="modal-footer">
@@ -241,6 +251,9 @@
                         regularmente, medite e limite cafeína/telas. Focar no "aqui e agora" com atividades prazerosas e
                         organizar tarefas diárias ajuda a reduzir preocupações. Se as crises forem frequentes, buscar
                         ajuda profissional é fundamental. </p>
+                    <a href="https://www.youtube.com/watch?v=Z1y3Alas8Zs">Clique aqui para aliviar suas ansiedades!</a>
+                </div>
+                <div class="botao-modal">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
                 </div>
                 <div class="modal-footer">
